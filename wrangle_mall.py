@@ -18,7 +18,6 @@ def get_db_url(db_name):
     return f"mysql+pymysql://{user}:{password}@{host}/{db_name}"
 
 
-# Generic function that takes in a database name and a query.
 
 
 def get_data_from_sql(str_db_name, query):
@@ -30,7 +29,6 @@ def get_data_from_sql(str_db_name, query):
     return df
 
 
-# Mother function to acquire and prepare Telco data.
 
 
 def get_new_zillow_data():
